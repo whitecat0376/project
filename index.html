@@ -18,9 +18,10 @@
 
         .container {
             max-width: 600px;
-            width: 90%;
-            padding: 40px 20px;
+            width: 95%; /* Kicsit növelve, hogy mobilon kitöltse a rendelkezésre álló helyet */
+            padding: 40px 10px;
             text-align: center;
+            box-sizing: border-box;
         }
 
         h1 {
@@ -39,7 +40,6 @@
             border: 4px solid #1a1a1a;
             margin-bottom: 30px;
             border-radius: 8px;
-            /* A sárga árnyék eltávolítva */
         }
 
         p {
@@ -90,12 +90,16 @@
             color: #1976d2;
         }
 
-        /* Mobil optimalizálás */
-        @media (max-width: 480px) {
-            h1 { font-size: 2rem; }
-            p { font-size: 1.1rem; }
-            .container { padding: 20px 15px; }
+        .legal-note {
+            margin-top: 50px;
+            font-size: 0.9rem;
+            color: #666;
+            font-style: italic;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
         }
+
+        /* Eltávolítottam a mobil optimalizálást, hogy a méretek fixek maradjanak minden eszközön */
     </style>
 </head>
 <body>
@@ -130,8 +134,3 @@
 
 </body>
 </html>
-
-
-
-
-
