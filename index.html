@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mumus helyett gyerekrajz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             background-color: #ffffff;
             color: #1a1a1a;
-            font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
+            /* Elsődleges a Comic Neue, ami mindenhol ugyanúgy jelenik meg */
+            font-family: 'Comic Neue', "Comic Sans MS", cursive, sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
@@ -18,7 +20,7 @@
 
         .container {
             max-width: 600px;
-            width: 95%; /* Kicsit növelve, hogy mobilon kitöltse a rendelkezésre álló helyet */
+            width: 95%;
             padding: 40px 10px;
             text-align: center;
             box-sizing: border-box;
@@ -28,9 +30,10 @@
             font-size: 2.5rem;
             margin-bottom: 30px;
             line-height: 1.2;
-            color: #d32f2f; /* Figyelemfelkeltő piros */
+            color: #d32f2f;
             text-transform: uppercase;
             letter-spacing: 1px;
+            font-weight: 700;
         }
 
         .hero-image {
@@ -50,7 +53,7 @@
         }
 
         .action-box {
-            background-color: #fff9c4; /* Halvány sárga háttér a doboznak */
+            background-color: #fff9c4;
             border: 3px dashed #fbc02d;
             padding: 25px;
             border-radius: 15px;
@@ -61,6 +64,7 @@
             margin-top: 0;
             font-size: 1.6rem;
             color: #f57f17;
+            font-weight: 700;
         }
 
         .instruction-list {
@@ -97,9 +101,8 @@
             font-style: italic;
             border-top: 1px solid #eee;
             padding-top: 20px;
+            font-family: sans-serif;
         }
-
-        /* Eltávolítottam a mobil optimalizálást, hogy a méretek fixek maradjanak minden eszközön */
     </style>
 </head>
 <body>
