@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mumus helyett gyerekrajz</title>
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             background-color: #ffffff;
             color: #1a1a1a;
-            /* Elsődleges a Comic Neue, ami mindenhol ugyanúgy jelenik meg */
-            font-family: 'Comic Neue', "Comic Sans MS", cursive, sans-serif;
+            /* Standard, mindenhol elérhető betűtípusok */
+            font-family: Arial, Helvetica, sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
@@ -21,19 +20,18 @@
         .container {
             max-width: 600px;
             width: 95%;
-            padding: 40px 10px;
+            padding: 40px 15px;
             text-align: center;
             box-sizing: border-box;
         }
 
         h1 {
-            font-size: 2.5rem;
-            margin-bottom: 30px;
+            font-size: 2.2rem;
+            margin-bottom: 25px;
             line-height: 1.2;
             color: #d32f2f;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            font-weight: 700;
+            font-weight: bold;
         }
 
         .hero-image {
@@ -42,29 +40,29 @@
             height: auto;
             border: 4px solid #1a1a1a;
             margin-bottom: 30px;
-            border-radius: 8px;
+            border-radius: 4px;
         }
 
         p {
             font-size: 1.2rem;
-            line-height: 1.6;
-            margin-bottom: 25px;
+            line-height: 1.5;
+            margin-bottom: 20px;
             text-align: center;
         }
 
         .action-box {
             background-color: #fff9c4;
-            border: 3px dashed #fbc02d;
+            border: 2px solid #fbc02d;
             padding: 25px;
-            border-radius: 15px;
+            border-radius: 8px;
             margin-top: 30px;
         }
 
         .action-box h2 {
             margin-top: 0;
-            font-size: 1.6rem;
-            color: #f57f17;
-            font-weight: 700;
+            font-size: 1.5rem;
+            color: #333;
+            font-weight: bold;
         }
 
         .instruction-list {
@@ -76,15 +74,16 @@
         }
 
         .instruction-list li {
-            margin-bottom: 10px;
+            margin-bottom: 12px;
             font-size: 1.1rem;
             display: flex;
             align-items: flex-start;
         }
 
         .instruction-list li::before {
-            content: "🎨";
+            content: "•";
             margin-right: 10px;
+            font-weight: bold;
         }
 
         .highlight-text {
@@ -96,12 +95,11 @@
 
         .legal-note {
             margin-top: 50px;
-            font-size: 0.9rem;
-            color: #666;
+            font-size: 0.85rem;
+            color: #777;
             font-style: italic;
             border-top: 1px solid #eee;
             padding-top: 20px;
-            font-family: sans-serif;
         }
     </style>
 </head>
