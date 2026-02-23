@@ -23,90 +23,106 @@
             text-align: center;
         }
 
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            line-height: 1.2;
+            color: #d32f2f; /* Figyelemfelkeltő piros */
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
         .hero-image {
             width: 100%;
             max-width: 500px;
             height: auto;
-            border: 3px solid #000;
-            box-shadow: 10px 10px 0px #ffcc00; /* Játékos sárga árnyék */
+            border: 4px solid #1a1a1a;
             margin-bottom: 30px;
-            border-radius: 2px;
-        }
-
-        h1 {
-            font-size: 2.2rem;
-            margin-bottom: 20px;
-            line-height: 1.2;
-            color: #d32f2f; /* Figyelemfelkeltő piros */
+            border-radius: 8px;
+            /* A sárga árnyék eltávolítva */
         }
 
         p {
             font-size: 1.2rem;
             line-height: 1.6;
             margin-bottom: 25px;
-            text-align: justify;
+            text-align: center;
         }
 
         .action-box {
-            background-color: #f0f7ff;
-            border: 2px dashed #2196f3;
-            padding: 20px;
-            border-radius: 10px;
+            background-color: #fff9c4; /* Halvány sárga háttér a doboznak */
+            border: 3px dashed #fbc02d;
+            padding: 25px;
+            border-radius: 15px;
             margin-top: 30px;
         }
 
         .action-box h2 {
             margin-top: 0;
-            font-size: 1.5rem;
-            color: #1976d2;
+            font-size: 1.6rem;
+            color: #f57f17;
         }
 
-        .footer {
-            margin-top: 60px;
-            padding: 20px;
-            font-size: 0.9rem;
-            color: #666;
-            border-top: 1px solid #eee;
-            width: 100%;
+        .instruction-list {
+            text-align: left;
+            display: inline-block;
+            margin: 0 auto;
+            padding: 0;
+            list-style: none;
+        }
+
+        .instruction-list li {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .instruction-list li::before {
+            content: "🎨";
+            margin-right: 10px;
+        }
+
+        .highlight-text {
+            margin-top: 40px;
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #1976d2;
         }
 
         /* Mobil optimalizálás */
         @media (max-width: 480px) {
-            h1 { font-size: 1.8rem; }
+            h1 { font-size: 2rem; }
             p { font-size: 1.1rem; }
+            .container { padding: 20px 15px; }
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <img src="rajz.jpg" alt="Gyerekrajz illusztráció" class="hero-image">
-
         <h1>Kampány helyett gyerekrajz!</h1>
 
+        <img src="rajz.jpg" alt="Gyerekrajz illusztráció" class="hero-image">
+
         <p>
-            Elég a gyűlöletből és az üres ígéretekből. Arasszuk el az utcákat valami olyasmivel, ami valóban a jövőről szól.
+            Elég a gyűlöletből és az üres ígéretekből. Árasszuk el az utcákat valami olyasmivel, ami valóban a jövőről szól.
         </p>
 
         <div class="action-box">
             <h2>Hogyan csatlakozz?</h2>
-            <p style="text-align: left; margin-bottom: 0;">
-                1. Kérj vagy készíts egy gyerekrajzot.<br>
-                2. Keress egy választási plakátot a környezetedben.<br>
-                3. Ragassz rá! Legyen az utca egy óriási kiállítás.<br>
-                4. Fotózd le és oszd meg!
-            </p>
+            <ul class="instruction-list">
+                <li>Kérj vagy készíts egy gyerekrajzot!</li>
+                <li>Keress egy választási plakátot a környezetedben!</li>
+                <li>Ragassz rá! Legyen az utca egy óriási kiállítás!</li>
+                <li>Fotózd le és oszd meg!</li>
+            </ul>
         </div>
 
-        <p style="margin-top: 30px; font-weight: bold;">
+        <p class="highlight-text">
             Tegyük színesebbé a várost!
         </p>
     </div>
 
-    <div class="footer">
-        Ez egy alulról szerveződő, névtelen kezdeményezés.
-    </div>
-
 </body>
-
 </html>
